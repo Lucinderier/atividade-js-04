@@ -69,10 +69,8 @@ const typeSentence = `O tipo de dado que a const "isRandomTVShowIncluded" armaze
   caracteres? BOOLEAN."
 */
 
-// const numberOfCharacters = typeSentence.length;
-// const booleanAsString = String(isRandomTVShowIncluded).charAt(0).toUpperCase() + String(isRandomTVShowIncluded).slice(1);
-// const typesentence = `A string que a "typeSentence" armazena tem mais de ${numberOfCharacters} caracteres? ${booleanAsString}.`;
-// // console.log(sentence);
+// console.log(`A string que a "typeSentence" armazena tem mais de ${39}  
+// caracteres? ${String(typeSentence.length == 39).charAt(0).toLocaleUpperCase() + String(typeSentence.length == 39).slice(1)}.`)
 
 /*
   06 - Comente o console.log() acima e:
