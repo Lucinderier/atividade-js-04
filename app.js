@@ -37,10 +37,13 @@ const sentence = `Minhas 3 séries favoritas são: ${my3FavoriteTVShows.slice(0,
   - Utilize o método adequado para fazer essa verificação;
   - Exiba no console o boolean que a "isRandomTVShowIncluded" recebeu.
 */
-
 const randomTVShow = 'Watchmen'
+
 const isRandomTVShowIncluded = my3FavoriteTVShows.includes(randomTVShow);
+
 // console.log(isRandomTVShowIncluded);
+
+
 
 /*
   04 - Comente o console.log() acima e:
@@ -81,12 +84,9 @@ const typeSentence = `O tipo de dado que a const "isRandomTVShowIncluded" armaze
   "Todos os NÚMERO_DE_ITENS itens do array "falsyValues" são falsy. Inclusive o  
   BOOLEAN."
 */
+// const falsyValues = [0, "", false, '', ``, null, undefined, NaN]
 
-// const falsyValues = [0, "", false, '', ``, null, undefined, NaN];
-// const numberOfItems = falsyValues.length;
-// const allFalsy = falsyValues.every(value => !value);
-// const booleanAsString = allFalsy ? "True" : "False";
-// console.log(`Todos os ${numberOfItems} itens do array "falsyValues" são falsy. Inclusive o ${booleanAsString}.`);
+// console.log(`Todos os ${falsyValues.length} itens do array "falsyValues" são falsy. Inclusive o ${Boolean(falsyValues) ? "True" : "False"}.`);
 
 /*
   07 - Comente o console.log() acima e:
@@ -96,8 +96,8 @@ const typeSentence = `O tipo de dado que a const "isRandomTVShowIncluded" armaze
     em boolean.
   - Você sabe por que essa conversão resultou em true?
 */
-const crazyOperation = null + 1;
-const crazyConversion = Boolean(crazyOperation);
+let crazyOperation = null + 1;
+let crazyConversion = Boolean(crazyOperation);
 // console.log(crazyConversion);
 // Você sabe por que essa conversão resultou em true? R: qualquer valor que não é zero, quando convertido para Boolean é considerado como true
 
@@ -114,10 +114,11 @@ const crazyConversion = Boolean(crazyOperation);
   é: BOOLEAN."
 */
 const ages = [31, 82, 61, 11];
-const agesSum = ages[0] + ages[2];
-const isSumLessThanOrEqualTo92 = agesSum <= 92;
-// console.log(`A soma entre o 1º e o 3º item de "ages" é menor ou igual a 92. Essa afirmação é: ${isSumLessThanOrEqualTo92}.`);
-// não entendi a questão, console esta respondendo True.
+
+const ageSum = ages[0] + ages[3];
+
+// console.log(`"A soma entre o 1º e o 3º item de "ages" é menor ou igual a 92. Essa afirmação  
+// é: ${ageSum <= 92}.`);
 
 /*
   09 - Comente o console.log() acima e:
@@ -127,8 +128,8 @@ const isSumLessThanOrEqualTo92 = agesSum <= 92;
   - Essa expressão deve resultar em false.
   - Exiba a "isNotAString" no console.
 */
+const isNotAString =  typeof randomTVShow ? "False" : "True";
 
-const isNotAString = typeof randomTVShow !== "string";
 // console.log(isNotAString);
 
 /*
@@ -138,13 +139,6 @@ const isNotAString = typeof randomTVShow !== "string";
     o número 8 existe no array;
   - Não utilize o método includes desta vez.
 */
-
 const evenNumbers = [0, 2, 4, 6, 8, 10]
-let isNumber8Present = false;
-for (let i = 0; i < evenNumbers.length; i++) {
-    if (evenNumbers[i] === 8) {
-        isNumber8Present = true;
-        break;
-    }
-}
-console.log(isNumber8Present);
+
+console.log(evenNumbers[0] == 8 || evenNumbers[1] == 8 || evenNumbers[2] == 8 || evenNumbers[3] == 8 || evenNumbers[4] == 8 || evenNumbers[5] == 8);
